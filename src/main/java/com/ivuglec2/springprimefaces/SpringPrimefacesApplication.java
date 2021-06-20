@@ -49,6 +49,7 @@ public class SpringPrimefacesApplication implements ServletContextAware {
         sc.setInitParameter("javax.faces.STATE_SAVING_METHOD", "server");
         sc.setInitParameter("primefaces.CLIENT_SIDE_VALIDATION", Boolean.TRUE.toString());
         sc.setInitParameter("primefaces.FONT_AWESOME", Boolean.TRUE.toString());
-        sc.setInitParameter("primefaces.THEME", "saga");
+        // sc.setInitParameter("primefaces.THEME", "saga"); // free primefaces default theme
+        sc.setInitParameter("primefaces.THEME", "ultima-green"); // premium Primefaces Ultima theme
     }
 }

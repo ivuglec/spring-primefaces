@@ -3,6 +3,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+libs/ultima-theme-2.1.1.jar
 
 ### STS ###
 .apt_generated

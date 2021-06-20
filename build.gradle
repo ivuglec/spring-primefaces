@@ -22,6 +22,7 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+    implementation fileTree(dir: 'libs', include: '*.jar')
     implementation "org.primefaces:primefaces:10.0.0"
     implementation "com.sun.faces:jsf-api:2.2.20"
     implementation "com.sun.faces:jsf-impl:2.2.20"
