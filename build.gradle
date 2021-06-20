@@ -1,0 +1,33 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.1'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'application'
+	id 'java'
+	id 'war'
+}
+
+group = 'com.ivuglec2'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation "org.primefaces:primefaces:10.0.0"
+    implementation "com.sun.faces:jsf-api:2.2.20"
+    implementation "com.sun.faces:jsf-impl:2.2.20"
+    implementation "org.apache.tomcat.embed:tomcat-embed-jasper:10.0.6"
+}
+
+test {
+	useJUnitPlatform()
+}
